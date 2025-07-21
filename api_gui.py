@@ -29,7 +29,7 @@ CLASS_COLORS = {
 }
 
 def get_img():
-    cam = cv2.VideoCapture(0)
+    cam = cv2.VideoCapture(2)
     if not cam.isOpened():
         print("Camera Error")
         exit(-1)
