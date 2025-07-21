@@ -16,7 +16,7 @@ save_path = '/home/rokey/Desktop/0110/test_file'
 text_save_path = '/home/rokey/Desktop/0110/results'
 os.makedirs(save_path, exist_ok=True)
 os.makedirs(text_save_path, exist_ok=True)
-image_counter = 2
+image_counter = 1
 
 # 클래스별 색상 매핑
 CLASS_COLORS = {
@@ -29,7 +29,7 @@ CLASS_COLORS = {
 }
 
 def get_img():
-    cam = cv2.VideoCapture(2)
+    cam = cv2.VideoCapture(0)
     if not cam.isOpened():
         print("Camera Error")
         exit(-1)
